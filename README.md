@@ -424,12 +424,4 @@ Fix:
 - Move all secrets to vault-encrypted files and/or cloud secret manager.
 - Consider HTTPS/TLS via Load Balancer + ACM for production.
 
-## 10. Notes About `.gitignore`
 
-Current ignore rules already include important sensitive files. Review and keep these aligned with your workflow.
-
-Also note there is a probable typo in one rule:
-
-- `terraform/aws/terraform.tfars`
-
-If intended, it should likely be `terraform/aws/terraform.tfvars`.
