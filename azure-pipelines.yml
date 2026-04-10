@@ -1,0 +1,11 @@
+trigger:
+- main
+
+pool:
+  name: 'SelfHostedPool'  # This ensures it uses the agent you just installed
+
+steps:
+- script: |
+    echo "This job is running on my Ubuntu VM from a forked repo!"
+    uname -a
+  displayName: 'Verify Forked Repo Build'
